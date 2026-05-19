@@ -53,16 +53,6 @@ export default function Home() {
 
       <div className="relative z-10 max-w-5xl w-full text-center text-white">
         <div className="mb-8">
-          <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="w-14 h-[1px] bg-white/40" />
-
-            <p className="uppercase tracking-[0.5em] text-xs text-white/60">
-              World Rhythm Movement
-            </p>
-
-            <div className="w-14 h-[1px] bg-white/40" />
-          </div>
-
           <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-[-0.04em] uppercase drop-shadow-2xl">
             WORLD
             <br />
