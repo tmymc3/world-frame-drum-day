@@ -51,7 +51,7 @@ export default function Home() {
     >
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative z-10 max-w-5xl w-full text-center text-white">
+      <div className="relative z-10 max-w-5xl w-full text-center text-white pt-8 md:pt-16">
         <div className="mb-8">
           <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-[-0.04em] uppercase drop-shadow-2xl">
             WORLD
@@ -79,15 +79,11 @@ export default function Home() {
           <Card value={timeLeft.seconds} label="Seconds" />
         </div>
 
-        <div className="mt-14">
-          <button className="bg-white text-black px-8 py-4 rounded-full text-sm uppercase tracking-[0.2em] font-semibold hover:scale-105 transition-transform duration-300">
-            Join The Movement
-          </button>
-        </div>
+        
 
-        <p className="mt-12 text-white/50 tracking-[0.2em] text-sm">
-          #WorldFrameDrumDay
-        </p>
+        <p className="mt-8 text-white/70 tracking-[0.15em] text-2xl md:text-3xl font-semibold">
+  #WorldFrameDrumDay
+</p>
       </div>
     </main>
   );
