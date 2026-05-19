@@ -31,50 +31,55 @@ export default function Home() {
   }, []);
 
   const Card = ({ value, label }: { value: number; label: string }) => (
-    <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl px-6 py-6 min-w-[120px] text-center">
+    <div className="bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl px-6 py-6 min-w-[120px] text-center shadow-2xl">
       <div className="text-4xl md:text-6xl font-bold text-white">
         {String(value).padStart(2, "0")}
       </div>
-      <div className="text-xs uppercase tracking-widest text-white/60 mt-2">
+
+      <div className="text-xs uppercase tracking-[0.25em] text-white/60 mt-2">
         {label}
       </div>
     </div>
   );
 
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center px-6">
-      <div className="max-w-4xl w-full text-center">
+    <main
+      className="min-h-screen bg-cover bg-center relative flex items-center justify-center px-6"
+      style={{
+        backgroundImage: "url('/drum.png')",
+      }}
+    >
+      <div className="absolute inset-0 bg-black/70" />
 
-        <h1 className="text-4xl md:text-6xl font-bold mt-4">
+      <div className="relative z-10 max-w-5xl w-full text-center text-white">
+        <p className="uppercase tracking-[0.4em] text-sm text-white/60 mb-4">
+          Global Celebration of Rhythm
+        </p>
+
+        <h1 className="text-5xl md:text-7xl font-black leading-tight drop-shadow-2xl">
           World Frame Drum Day
         </h1>
 
-        <img
-          src="/drum.png"
-          alt="Frame Drum"
-          style={{
-            width: "300px",
-            margin: "20px auto",
-            borderRadius: "16px",
-            display: "block"
-          }}
-        />
-
-        <p className="text-white/60 mt-4">
+        <p className="text-xl md:text-2xl text-white/80 mt-6 mb-14">
           02. Oktober 2026
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           <Card value={timeLeft.days} label="Days" />
           <Card value={timeLeft.hours} label="Hours" />
           <Card value={timeLeft.minutes} label="Minutes" />
           <Card value={timeLeft.seconds} label="Seconds" />
         </div>
 
-        <p className="text-white/40 text-sm">
+        <div className="mt-14">
+          <button className="bg-white text-black px-8 py-4 rounded-full text-sm uppercase tracking-[0.2em] font-semibold hover:scale-105 transition-transform duration-300">
+            Join The Movement
+          </button>
+        </div>
+
+        <p className="mt-12 text-white/50 tracking-[0.2em] text-sm">
           #WorldFrameDrumDay
         </p>
-
       </div>
     </main>
   );
