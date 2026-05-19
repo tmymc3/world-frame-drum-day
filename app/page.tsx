@@ -52,17 +52,35 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/70" />
 
       <div className="relative z-10 max-w-5xl w-full text-center text-white">
-        <p className="uppercase tracking-[0.4em] text-sm text-white/60 mb-4">
-          Global Celebration of Rhythm
-        </p>
+        <div className="mb-8">
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="w-14 h-[1px] bg-white/40" />
 
-        <h1 className="text-5xl md:text-7xl font-black leading-tight drop-shadow-2xl">
-          World Frame Drum Day
-        </h1>
+            <p className="uppercase tracking-[0.5em] text-xs text-white/60">
+              World Rhythm Movement
+            </p>
 
-        <p className="text-xl md:text-2xl text-white/80 mt-6 mb-14">
-          02. Oktober 2026
-        </p>
+            <div className="w-14 h-[1px] bg-white/40" />
+          </div>
+
+          <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-[-0.04em] uppercase drop-shadow-2xl">
+            WORLD
+            <br />
+            FRAME DRUM
+            <br />
+            DAY
+          </h1>
+
+          <div className="mt-8 flex items-center justify-center gap-4">
+            <div className="w-10 h-[1px] bg-white/30" />
+
+            <p className="text-lg md:text-2xl tracking-[0.25em] uppercase text-white/80">
+              02 · Oktober · 2026
+            </p>
+
+            <div className="w-10 h-[1px] bg-white/30" />
+          </div>
+        </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           <Card value={timeLeft.days} label="Days" />
