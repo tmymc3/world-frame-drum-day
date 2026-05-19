@@ -45,16 +45,12 @@ export default function Home() {
     <main className="min-h-screen bg-black text-white flex items-center justify-center px-6">
       <div className="max-w-4xl w-full text-center">
 
-        <p className="text-xs tracking-[0.3em] uppercase text-white/50">
-          Global Rhythm Community
-        </p>
-
         <h1 className="text-4xl md:text-6xl font-bold mt-4">
           World Frame Drum Day
         </h1>
 
         <p className="text-white/60 mt-4">
-          A global celebration of rhythm and connection.
+          02. Oktober 2026
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
