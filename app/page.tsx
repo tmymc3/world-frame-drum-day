@@ -49,6 +49,17 @@ export default function Home() {
           World Frame Drum Day
         </h1>
 
+        <img
+          src="/drum.png"
+          alt="Frame Drum"
+          style={{
+            width: "300px",
+            margin: "20px auto",
+            borderRadius: "16px",
+            display: "block"
+          }}
+        />
+
         <p className="text-white/60 mt-4">
           02. Oktober 2026
         </p>
@@ -68,4 +79,3 @@ export default function Home() {
     </main>
   );
 }
-
